@@ -1,5 +1,7 @@
 jj-uploader is designed for single file update usage in your Vue App.
 
+![demo](https://github.com/JasonLeee2014/jj-uploader/blob/master/demo.gif?raw=true)
+
 ### Usage
 
 1. install jj-uploader via npm
@@ -50,6 +52,3 @@ methods:{
     }
   }
 ```
-
-### Demo
-
