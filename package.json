@@ -1,0 +1,38 @@
+{
+  "name": "jj-uploader",
+  "version": "1.0.0",
+  "description": "a vue componet to upload file to server using ajax, support preview image",
+  "keywords": ["upload","vue","uploader","ajax","preview"],
+  "author": {"name" : "junjie-lee", "email" : "comfan2012@icloud.com"},
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JasonLeee2014/jj-uploader.git"
+  },
+  "main": "dist/jj-uploader.umd.js",
+  "module": "dist/jj-uploader.esm.js",
+  "unpkg": "dist/jj-uploader.min.js",
+  "browser": {
+    "./sfc": "src/jj-uploader.vue"
+  },
+  "files": [
+    "dist/*",
+    "src/*"
+  ],
+  "scripts": {
+    "build": "npm run build:unpkg & npm run build:es & npm run build:umd",
+    "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/jj-uploader.umd.js",
+    "build:es": "rollup --config build/rollup.config.js --format es --file dist/jj-uploader.esm.js",
+    "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/jj-uploader.min.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "minimist": "^1.2.0",
+    "rollup": "^0.66.2",
+    "rollup-plugin-buble": "^0.19.2",
+    "rollup-plugin-uglify-es": "0.0.1",
+    "rollup-plugin-vue": "^4.3.0",
+    "vue": "^2.5.16",
+    "vue-template-compiler": "^2.5.16"
+  }
+}
